@@ -19,5 +19,8 @@ total_price = notebook_price * number_of_notebooks
 is_money_enough: bool = available_money >= total_price
 
 # this is final result
-print(f"Total price for {number_of_notebooks} notebooks is: {total_price} rupees.")
+if is_money_enough:
+	print(f"You have enough money to buy {number_of_notebooks} notebooks.")
+else:
+	print(f"You do not have enough money to buy {number_of_notebooks} notebooks.")
 
