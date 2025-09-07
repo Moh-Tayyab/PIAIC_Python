@@ -63,3 +63,7 @@ fruit_list = ["apple", "banana", "cherry", "kiwi"]
 # Sort by length of word
 fruit_list.sort(key=len)
 print(f"Sort by length of word: {fruit_list}")
+
+#len
+
+print(len(num_list) + 2) #num_list is 5 and add 2 for test the final output in 7.
