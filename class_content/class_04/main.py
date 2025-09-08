@@ -36,7 +36,7 @@ print(f"Add an element at end of list: {num_list}")
 
 # extend
 # Do lists ko merge karta hai / ek iterable ke saare elements add kar deta hai
-num_list.extend(["zain", "tayyab"])
+num_list.extend([6, 7, 8, 9])
 print(f"{num_list}")
 
 # insert
@@ -76,15 +76,44 @@ fruit_list.sort(key=len)
 print(f"Sort by length of word: {fruit_list}")
 
 # reverse
+# List ko ulta kar deta hai (in-place)
 print(f"before apply reverse method: {num_list}")
 num_list.reverse()
 
 print(f"reverse the list: {num_list}")
+
+# copy
+# List ki shallow copy banata hai
+num_list.copy()
+print(f"Created same list shallow copy: {num_list}")
+
+# count
+# Element kitni dafa aaya hai, yeh count karta hai
+print(f"Count element in list: {num_list.count(6)}") # 6 is two time in existed list
+
+# clear
+# Element kitni dafa aaya hai, yeh count karta hai
+# num_list.clear()
+# print(f"Pure list empty kar deta hai: {num_list}")
+
+
 
 
 
 # Python list built in functions (not method)
 
 # len
+# max
+# min
+# sorted
 
-print(len(num_list) + 2) #num_list is 5 and add 2 for test the final output in 7.
+print(len(num_list) + 2) # num_list is 5 and add 2 for test the final output in 7.
+
+# max
+
+print(max(num_list)) # list mein jo num sb sy bara ho ga wo final output ho ge.
+
+# min
+print(min(num_list)) # list mein jo num sb sy chota ho ga wo print ho ga
+
+#print(sorted(num_list))
